@@ -92,6 +92,9 @@ function M.setup()
       create = function(...)
         M.create_pr(...)
       end,
+      draft = function()
+        M.create_pr "draft"
+      end,
       commits = function()
         picker.commits()
       end,
